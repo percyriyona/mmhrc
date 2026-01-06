@@ -12,20 +12,33 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
         }
 
         .login-box {
-            background: white;
+            background: #ffffff;
+            width: 320px;
             padding: 30px;
-            width: 300px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .login-box img {
+            width: 90px;
+            margin-bottom: 15px;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
         }
 
         .login-box input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
         .login-box button {
@@ -34,8 +47,8 @@
             background-color: #007BFF;
             color: white;
             border: none;
-            cursor: pointer;
             border-radius: 5px;
+            cursor: pointer;
         }
 
         .login-box button:hover {
@@ -43,9 +56,13 @@
         }
 
         .login-box p {
-            text-align: center;
             margin-top: 15px;
             font-size: 14px;
+        }
+
+        .login-box a {
+            text-decoration: none;
+            color: #007BFF;
         }
     </style>
 </head>
@@ -53,7 +70,10 @@
 <body>
 
     <div class="login-box">
-    <img src="C:\Users\Administrator\Downloads\download.jpg">
+        <!-- Logo -->
+        <img src="download.jpg" alt="Logo">
+
+        <h2>Login</h2>
 
         <form>
             <input type="text" placeholder="Username" required>
@@ -67,3 +87,5 @@
 
 </body>
 </html>
+
+
